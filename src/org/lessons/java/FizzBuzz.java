@@ -25,6 +25,8 @@ public class FizzBuzz {
             System.out.println("Numero non valido, inserisci un numero tra 1 e 999");
         }
 
+        scanNumber.close(); //chiudo lo scanner
+
         //stampo i numeri nel terminale
         for (int i = 0; i < userNumber; i++){
 

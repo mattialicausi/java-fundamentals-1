@@ -23,10 +23,13 @@ public class TrainTicket {
         System.out.println("Inserisci la tua età");
         userAge = Integer.parseInt(scanAge.nextLine());
 
+
+
         //uso lo scanner per chiedere quanti km vuole percorrere l'utente e li inserisco in kmUser
         Scanner scanKm = new Scanner(System.in);
         System.out.println("Quanti km vuoi percorrere? ");
         kmUser = Integer.parseInt(scanKm.nextLine());
+
 
         //stampo in terminale età e km da percorrere
         System.out.println("La tua età è: " + userAge + " anni");
@@ -59,6 +62,9 @@ public class TrainTicket {
         DecimalFormat df = new DecimalFormat("0.00");
         String formattedPrice = df.format(finalPrice);
         System.out.println("Il prezzo del tuo biglietto è di: " + formattedPrice + "€");
+
+        scanKm.close(); //chiudo lo scanner
+        scanAge.close(); //chiudo lo scanner
 
     }
 }

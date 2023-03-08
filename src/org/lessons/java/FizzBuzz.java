@@ -9,6 +9,8 @@ public class FizzBuzz {
         int userNumber;
         int min = 0;
         int max = 1000;
+        int n = 1;
+
 
         //prendo lo userNumber con lo scanner
         Scanner scanNumber = new Scanner(System.in);
@@ -23,6 +25,28 @@ public class FizzBuzz {
             System.out.println("Numero non valido, inserisci un numero tra 1 e 999");
         }
 
+        //stampo i numeri nel terminale
+        for (int i = 0; i < userNumber; i++){
+
+            if (((n % 3) == 0 && (n % 5) == 0)) {
+
+                System.out.println("FizzBuzz");
+
+            } else if ((n % 5) == 0) {
+
+                System.out.println("Buzz");
+
+            } else if ((n % 3) == 0) {
+
+                System.out.println("Fizz");
+
+            } else {
+
+                System.out.println(n);
+
+            }
+            n++;
+        }
 
     }
 }
